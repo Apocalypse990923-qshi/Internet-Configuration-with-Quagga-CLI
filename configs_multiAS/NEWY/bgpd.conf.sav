@@ -1,0 +1,28 @@
+!
+! Zebra configuration saved from vty
+!   2023/09/19 16:37:47
+!
+hostname G4_NEWY
+password G4_NEWY
+log file /var/log/quagga/bgpd_G4_NEWY.log
+!
+router bgp 4
+ bgp router-id 4.101.0.2
+ network 4.0.0.0/8
+ neighbor iBGP-neighbors peer-group
+ neighbor iBGP-neighbors remote-as 4
+ neighbor iBGP-neighbors update-source host
+ neighbor iBGP-neighbors next-hop-self
+ neighbor 4.102.0.2 peer-group iBGP-neighbors
+ neighbor 4.103.0.2 peer-group iBGP-neighbors
+ neighbor 4.104.0.2 peer-group iBGP-neighbors
+ neighbor 4.105.0.2 peer-group iBGP-neighbors
+ neighbor 4.106.0.2 peer-group iBGP-neighbors
+ neighbor 4.107.0.2 peer-group iBGP-neighbors
+ neighbor 4.108.0.2 peer-group iBGP-neighbors
+ neighbor 4.109.0.2 peer-group iBGP-neighbors
+ neighbor 6.0.1.2 remote-as 6
+ neighbor 6.0.1.2 update-source east
+!
+line vty
+!

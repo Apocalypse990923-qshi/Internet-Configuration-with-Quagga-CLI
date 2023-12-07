@@ -6,7 +6,7 @@ Then, set up valid forwarding state between different ASes, so that an end-host 
 
 Both OSPF and BGP are configured through Quagga software routing suite, which runs on several virtual routers in virtual machine (VM).
 
-Last, for both parts, I wrote Python scripts to automatically load the configuration for the system booting up
+Last, for both parts, I wrote Python scripts to automatically load the configuration for the system booting up.
 
 ![Alt text](image.png)
 
@@ -21,8 +21,8 @@ Last, for both parts, I wrote Python scripts to automatically load the configura
       python internet2.py`
 
   Scripting Configurations:
-    * load_configs.py: This script should automate the loading of the configs for all the routers in Internet2
-    * config_i2_hosts.py: This script should automate configuring each Internet2 host's interface and configuring the default route.
+    * `load_configs.py`: This script should automate the loading of the configs for all the routers in Internet2
+    * `config_i2_hosts.py`: This script should automate configuring each Internet2 host's interface and configuring the default route.
 * PartB
   To start the topology for this part, type the following commands:
 
@@ -33,4 +33,4 @@ Last, for both parts, I wrote Python scripts to automatically load the configura
       python multiAS.py
 
   Scripting Configurations:
-    * load_configs_multiAS.py: This script should automate the loading of the OSPF and BGP configs for all the routers in Internet2
+    * `load_configs_multiAS.py`: This script should automate the loading of the OSPF and BGP configs for all the routers in Internet2
